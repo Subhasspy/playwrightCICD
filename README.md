@@ -1,5 +1,7 @@
 # Playwright E2E Testing Portfolio Project
 
+[![Playwright Tests](https://github.com/yourusername/playwright-e2e-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/yourusername/playwright-e2e-portfolio/actions/workflows/playwright.yml)
+
 A comprehensive end-to-end testing portfolio project demonstrating advanced Playwright skills, including page object models, custom fixtures, API testing, and CI/CD integration.
 
 ## 🚀 Features
@@ -81,7 +83,32 @@ A comprehensive end-to-end testing portfolio project demonstrating advanced Play
    npm run test:ui
    ```
 
-## 📋 Test Coverage
+## � Deploying to GitHub
+
+1. **Create a new repository on GitHub**
+   - Go to [GitHub.com](https://github.com) and create a new repository
+   - Name it `playwright-e2e-portfolio` or your preferred name
+   - Don't initialize with README, .gitignore, or license
+
+2. **Push your local repository**
+   ```bash
+   # Add the GitHub repository as remote origin
+   git remote add origin https://github.com/yourusername/playwright-e2e-portfolio.git
+
+   # Push to GitHub
+   git push -u origin master
+   ```
+
+3. **Update the README badge**
+   - Replace `yourusername` in the CI badge URL with your actual GitHub username
+   - The CI workflow will automatically run on your first push
+
+4. **Enable GitHub Pages (optional)**
+   - Go to repository Settings → Pages
+   - Select "Deploy from a branch" and choose `master` or `main`
+   - The test website will be available at `https://yourusername.github.io/playwright-e2e-portfolio/`
+
+## �📋 Test Coverage
 
 ### Home Page Tests
 - Page loading and navigation
