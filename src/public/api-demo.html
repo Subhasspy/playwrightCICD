@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Demo - Playwright Test Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/forms">Forms</a></li>
+        <li><a href="/api-demo">API Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="api-demo">
+      <h1>API Demonstration</h1>
+
+      <div class="api-section">
+        <h2>Fetch Users</h2>
+        <button id="fetch-users">Load Users</button>
+        <div id="users-list"></div>
+      </div>
+
+      <div class="api-section">
+        <h2>Simulate API Error</h2>
+        <button id="simulate-error">Trigger Error</button>
+        <div id="error-message"></div>
+      </div>
+
+      <div class="api-section">
+        <h2>Real-time Updates</h2>
+        <button id="start-updates">Start Updates</button>
+        <button id="stop-updates">Stop Updates</button>
+        <div id="live-data">No updates yet</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Playwright Test Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

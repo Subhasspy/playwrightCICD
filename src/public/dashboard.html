@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Playwright Test Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/forms">Forms</a></li>
+        <li><a href="/api-demo">API Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard">
+      <h1>Dashboard</h1>
+      <div class="dashboard-grid">
+        <div class="card">
+          <h3>Total Users</h3>
+          <p id="user-count">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Active Sessions</h3>
+          <p>42</p>
+        </div>
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$12,345</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="refresh-data">Refresh Data</button>
+        <button id="toggle-theme">Toggle Theme</button>
+      </div>
+
+      <div id="notification" class="notification hidden">
+        Data refreshed successfully!
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Playwright Test Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
