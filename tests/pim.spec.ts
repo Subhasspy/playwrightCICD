@@ -1,9 +1,10 @@
 import { test, expect } from "./fixtures/PageFixture";
+import { loginCredentials } from "../test.config.ts";
 
 test.describe("PIM Test Suite", () => {
     test.beforeEach(async ({ loginPage }) => {
         await loginPage.gotoLoginPage();
-        await loginPage.login("Admin", "admin123");
+        await loginPage.login(loginCredentials.username, loginCredentials.password);
     });
 
     test("should add a new employee and display a success notification", async ({ pimPage }) => {
@@ -15,7 +16,7 @@ test.describe("PIM Test Suite", () => {
         });
         await test.step("Verify employee is added successfully", async () => {
             const successMessage = await pimPage.getSuccessMessage();
-            expect(successMessage).toContain("Successfully Saved");
+            expect(successMessage, "Success message should contain confirmation text").toContain("Successfully Saved");
         });
     });
 
@@ -42,7 +43,7 @@ test.describe("PIM Test Suite", () => {
         });
 
         await test.step("Verify the API intercept was exercised", async () => {
-            expect(employeeListErrorHit).toBe(true);
+            expect(employeeListErrorHit, "API route should have been intercepted").toBe(true);
         });
     });
 });
