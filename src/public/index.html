@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playwright Test Website - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/forms">Forms</a></li>
+        <li><a href="/api-demo">API Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Welcome to Playwright Test Website</h1>
+      <p>This website is designed for comprehensive E2E testing with Playwright.</p>
+      <button id="cta-button">Get Started</button>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Multiple Inputs</h3>
+          <p>Test various form inputs and interactions.</p>
+        </div>
+        <div class="feature">
+          <h3>Dynamic Content</h3>
+          <p>Experience loading states and dynamic updates.</p>
+        </div>
+        <div class="feature">
+          <h3>API Integration</h3>
+          <p>Interact with backend APIs for realistic testing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="counter">
+      <h2>Interactive Counter</h2>
+      <div class="counter-container">
+        <button id="decrement">-</button>
+        <span id="count">0</span>
+        <button id="increment">+</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Playwright Test Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

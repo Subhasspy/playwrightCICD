@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Playwright Test Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/forms">Forms</a></li>
+        <li><a href="/api-demo">API Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="login-form">
+      <h1>Login</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div id="login-message"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Playwright Test Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
