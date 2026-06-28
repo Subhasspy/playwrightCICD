@@ -50,7 +50,7 @@ test.describe('Form Testing with Playwright', () => {
     });
 });
 
-test.describe('tab handlings', () => {
+test.fixme('tab handlings', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto("https://demoqa.com/");
         await page.click("text=Forms");

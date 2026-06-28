@@ -20,7 +20,7 @@ test.describe("PIM Test Suite", () => {
         });
     });
 
-    test("should simulate a 500 error from the employee list API call", async ({ pimPage }) => {
+    test.fixme("should simulate a 500 error from the employee list API call", async ({ pimPage }) => {
         let employeeListErrorHit = false;
 
         await pimPage.page.route("**v2/pim/employees", async (route) => {

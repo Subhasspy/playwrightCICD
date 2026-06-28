@@ -1,0 +1,58 @@
+<testsuites id="" name="" tests="11" failures="0" skipped="3" errors="0" time="16.85332">
+<testsuite name="apiTest.spec.ts" timestamp="2026-06-28T05:19:17.785Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.291" errors="0">
+<testcase name="API Testing with Playwright › positive API test" classname="apiTest.spec.ts" time="0.291">
+</testcase>
+</testsuite>
+<testsuite name="assertions.spec.ts" timestamp="2026-06-28T05:19:17.785Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.89" errors="0">
+<testcase name="Get book price and check it&apos;s in ascending order › open the book website" classname="assertions.spec.ts" time="1.685">
+</testcase>
+<testcase name="Get book price and check it&apos;s in ascending order › sort by price in ascending order" classname="assertions.spec.ts" time="1.205">
+<system-out>
+<![CDATA[[ [33m10[39m, [33m10[39m, [33m30[39m, [33m40[39m, [33m56[39m ]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="forms.spec.ts" timestamp="2026-06-28T05:19:17.785Z" hostname="chromium" tests="2" failures="0" skipped="1" time="9.068" errors="0">
+<testcase name="Form Testing with Playwright › positive form submission test" classname="forms.spec.ts" time="9.068">
+</testcase>
+<testcase name="tab handlings" classname="forms.spec.ts">
+<properties>
+<property name="fixme" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2026-06-28T05:19:17.785Z" hostname="chromium" tests="3" failures="0" skipped="1" time="18.259" errors="0">
+<testcase name="Login Tests › Login with valid credentials" classname="login.spec.ts" time="8.035">
+</testcase>
+<testcase name="Login Tests › Login with invalid credentials" classname="login.spec.ts" time="10.224">
+</testcase>
+<testcase name="Amazon Search Tests" classname="login.spec.ts">
+<properties>
+<property name="fixme" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="pim.spec.ts" timestamp="2026-06-28T05:19:17.785Z" hostname="chromium" tests="2" failures="0" skipped="1" time="12.382" errors="0">
+<testcase name="PIM Test Suite › should add a new employee and display a success notification" classname="pim.spec.ts" time="12.382">
+</testcase>
+<testcase name="PIM Test Suite › should simulate a 500 error from the employee list API call" classname="pim.spec.ts">
+<properties>
+<property name="fixme" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="seed.spec.ts" timestamp="2026-06-28T05:19:17.785Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.147" errors="0">
+<testcase name="Test group › seed" classname="seed.spec.ts" time="0.147">
+</testcase>
+</testsuite>
+</testsuites>

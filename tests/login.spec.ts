@@ -20,3 +20,30 @@ test.describe("Login Tests", () => {
             });
     });
 });
+
+//wright test to open amazon.in and search mobiles and scroll 2 times and pick 7th device in that page
+test.fixme("Amazon Search Tests", () => {
+    test("Search for mobiles and select 7th device", async ({ page }: { page: any }) => {
+        await test.step("Open Amazon India website", async () => {
+            await page.goto("https://www.amazon.in");
+        });
+        await test.step("Search for mobiles", async () => {
+            await page.fill("#twotabsearchtextbox", "mobiles");
+            await page.click("#nav-search-submit-button");
+        });
+        await test.step("Scroll down the page twice", async () => {
+            await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+            await page.waitForTimeout(1000); // Wait for 1 second
+            await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+            await page.waitForTimeout(1000); // Wait for 1 second
+        });
+        await test.step("Select the 7th device from the search results", async () => {
+            const devices = await page.$$(".s-result-item");
+            if (devices.length >= 7) {
+                await devices[6].click(); // Click on the 7th device (index 6)
+            } else {
+                throw new Error("Less than 7 devices found in the search results");
+            }
+        });
+    });
+});
